@@ -1,0 +1,8 @@
+count = 0
+addmore = "Y"
+while addmore == "Y":
+  name = str(input("Please enter the name of the person here >>> "))
+  print(name,"has been invited")
+  count = count + 1
+  addmore = str(input("Would you like to add another person y/n >>> ")).upper()
+  print(count)
