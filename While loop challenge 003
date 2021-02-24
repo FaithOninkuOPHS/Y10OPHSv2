@@ -1,0 +1,10 @@
+num1 = int(input("Enter a number"))
+firstnum = num1
+total = firstnum
+loop = "y"
+while loop =="y":
+  num2 = int(input("Enter another number"))
+  total = num1 + num2
+  loop = str(input("add another number? y/n"))
+
+print("loop exited")
