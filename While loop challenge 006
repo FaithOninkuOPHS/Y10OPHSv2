@@ -1,0 +1,11 @@
+def number():
+  Usernum = int(input("Please enter a number >>> "))
+  if Usernum < 10:
+    print("Too low")
+    number()
+  elif Usernum > 20:
+    print("Too high")
+    number()
+  else:
+    print("Thank you")
+number()
