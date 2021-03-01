@@ -1,0 +1,13 @@
+compnum = 50
+Usernum = int(input("Guess the number! > "))
+count = 1
+Retry = "Y"
+
+while compnum != Usernum:
+  if Usernum > 50:
+    print("Too high")
+  else:
+    print("Too low")
+  count = count + 1
+  Usernum = int(input("Try another number >>> "))
+print("Loop exited")
