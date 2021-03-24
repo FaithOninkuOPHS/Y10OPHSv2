@@ -1,1 +1,3 @@
-
+number = int(input("Please enter a number under 50 >>> "))
+for holdingNumbersFromRange in range(50,number):
+  print (holdingNumbersFromRange)
