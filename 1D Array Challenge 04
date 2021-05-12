@@ -1,0 +1,12 @@
+Tvprogramme = ['Eastenders','Emmerdale','Googlebox','Coronation Street']
+
+for (i) in Tvprogramme:
+  print (i)
+
+
+show = str(input("Enter another show >>>"))
+location = int(input("Enter the location of that show between 0-3 >>>"))
+
+
+Tvprogramme.append(location, show)
+print(Tvprogramme)
