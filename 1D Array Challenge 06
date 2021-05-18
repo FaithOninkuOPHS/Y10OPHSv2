@@ -1,0 +1,18 @@
+nums = []
+num1 = int(input("Enter a number >>>"))
+num2 = int(input("Enter another number >>>"))
+num3 = int(input("Enter another number >>>"))
+num4 = int(input("Enter another number >>>"))
+
+nums.append(num1)
+nums.append(num2)
+nums.append(num3)
+
+
+
+check = str(input("Do you want to keep the last number you inputed, Y or N >>>")).upper()
+
+if check == "Y":
+  nums.append(num4)
+else:
+  print(nums)
