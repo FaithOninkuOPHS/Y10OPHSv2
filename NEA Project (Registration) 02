@@ -1,0 +1,37 @@
+def welcome():
+    print("Welcome message")
+    email = str(input("Enter email address: >>>"))
+    skill = str(input("Enter skill level - E for expert or C for casual : >>>")).upper()
+    if skill == "E":
+        skill = "Expert"
+    elif skill == "C":
+        skill = "Casual"
+    else:
+        print("Error!! Skill level not recognised, try again!")
+        skill = str(input("Enter skill level - E for expert or C for casual : >>>")).upper()
+    country = str(input("Enter country: UK/US/AU: >>>")).upper()
+
+
+
+    if country == "UK":
+        if skill =="C":
+            print("The UK fee is: 30 GBP")
+        else:
+            print("The UK fee is: 45 GBP")
+    if country =="US":
+        if skill =="C":
+            print("The US fee is: 45 USD")
+        else:
+            print("The US fee is: 67.50 USD")
+    if country == "AU":
+        if skill == "C":
+            print("The AU fee is: 45 AUD")
+        else:
+            print("The AU fee is: 67.50 AUD")
+    else:
+        again = str(input("Calculate another fee - Y/N")).upper
+    if again == "Y":
+        welcome()
+    else:
+        print("Bye!")
+welcome()
