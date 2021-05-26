@@ -28,8 +28,9 @@ def welcome():
             print("The AU fee is: 45 AUD")
         else:
             print("The AU fee is: 67.50 AUD")
-    else:
-        again = str(input("Calculate another fee - Y/N")).upper
+
+    again = str(input("Calculate another fee - Y/N")).upper()
+        
     if again == "Y":
         welcome()
     else:
